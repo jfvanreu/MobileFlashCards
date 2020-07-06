@@ -24,11 +24,14 @@ class DeckList extends Component {
         const { decks } = this.props
         const ids = Object.keys(decks)
         
+        //create the expect data structure for Flatlist
+        const formatted_ids = ids.map((item) => ({"key":item}))
+
         return (
                 <FlatList style={styles.container} data={ids} renderItem={({item}) =>
                         {
                             return (
-                                    <DeckSummary id={item} navigation={this.props.navigation}/>
+                                    <DeckSummary id={item.key} navigation={this.props.navigation}/>
                                     )
                         }}
                 />
