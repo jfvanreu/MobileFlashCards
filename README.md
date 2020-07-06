@@ -20,8 +20,7 @@ The application provides the following functionalities:
 - Users can retake quizzes as needed
 - Progress is shown during the quiz
 - Users can navigate throughout the app using buttons and Tabs
-
-
+- Users get notified on a daily basis to complete at least one quiz
 
 # React-Redux
 This application relies on Redux to manage the overall state.
