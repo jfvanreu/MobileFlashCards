@@ -28,7 +28,7 @@ class DeckList extends Component {
         const formatted_ids = ids.map((item) => ({"key":item}))
 
         return (
-                <FlatList style={styles.container} data={ids} renderItem={({item}) =>
+                <FlatList style={styles.container} data={formatted_ids} renderItem={({item}) =>
                         {
                             return (
                                     <DeckSummary id={item.key} navigation={this.props.navigation}/>
